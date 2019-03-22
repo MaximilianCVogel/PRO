@@ -1,0 +1,17 @@
+<?xml version="1.5" encoding="utf-8" ?>
+<!DOCTYPE configuration [ 
+	<!-- Root -->
+	<!ELEMENT config (sonnerie, tempsDePreparation, actualisation, reveilMin, reveilMax, maison)>
+	<!-- Le chemin du fichier correspondant à la sonnerie -->
+	<!ELEMENT sonnerie (#PCDATA)>
+	<!-- Le temps que l'utilisateur met a se préparer lors du réveil (en minutes) -->
+	<!ELEMENT tempsDePreparation (#PCDATA)>
+	<!-- Le temps d'un cycle d'actualisation d'un réveil smart -->
+	<!ELEMENT actualisation (#PCDATA)>
+	<!-- L'heure de réveil au plus tôt -->
+	<!ELEMENT reveilMin (#PCDATA)>
+	<!-- L'heure de réveil au plus tard -->
+	<!ELEMENT reveilMax (#PCDATA)>
+	<!-- L'adresse de la maison -->
+	<!ELEMENT maison (#PCDATA)>
+]>
