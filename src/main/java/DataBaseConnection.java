@@ -3,6 +3,7 @@ import java.sql.*;
 import java.util.*;
 
 public class DataBaseConnection {
+
     public Connection getConnection() throws SQLException {
 
         Connection conn = null;
@@ -12,14 +13,14 @@ public class DataBaseConnection {
         conn = DriverManager.getConnection(
                 "jdbc:mysql://127.0.0.1:3306/",
                 connectionProps);
-        System.out.println("Connecte a la base de donnee");
+        System.out.println("Connecté à la base de donnée");
         return conn;
     }
 
     /**
-     * Methode qui permet d'effectuer une requete SELECT dans la BDD
-     * @param requete la requete
-     * @return le resultat de la requete, null si il y a une erreur
+     * Méthode qui permet d'effectuer une requête SELECT dans la BDD
+     * @param requete la requête
+     * @return le résultat de la requête, null si il y a une erreur
      */
     public ResultSet select(String requete) {
 
@@ -32,8 +33,6 @@ public class DataBaseConnection {
             return null;
         }
     }
-
-    public 
 
 
 }
